@@ -9,5 +9,6 @@ public class LinkedListMain {
 		list.addLast(70);
 		list.display();
 		list.search(30);
+
 	}
 }

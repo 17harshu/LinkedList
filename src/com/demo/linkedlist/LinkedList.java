@@ -86,16 +86,13 @@ public class LinkedList {
 				}
 
 				temp = temp.ref;
-
 			}
-
 		}
 
 		if (isFound)
 			System.out.println("Data found ");
 		else
 			System.out.println(data + " not found");
-
 	}
 
 	public void display() {
