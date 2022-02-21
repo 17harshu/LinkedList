@@ -10,6 +10,5 @@ public class LinkedListMain {
 		list.display();
 		list.popLast();
 		list.display();
-
 	}
 }

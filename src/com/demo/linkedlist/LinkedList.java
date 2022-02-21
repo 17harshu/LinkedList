@@ -77,7 +77,6 @@ public class LinkedList {
 					System.out.println(temp.data);
 				temp = temp.ref;
 			}
-
 		}
 	}
 }
