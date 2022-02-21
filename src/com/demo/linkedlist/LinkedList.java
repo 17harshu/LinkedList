@@ -65,6 +65,39 @@ public class LinkedList {
 		}
 	}
 
+	public void search(Object data) {
+
+		boolean isFound = false;
+
+		if (head == null)
+			System.out.println("No elements to search");
+
+		else if (head.data == data)
+			isFound = true;
+
+		else {
+
+			Node temp = head;
+			while (temp != null) {
+
+				if (temp.data == data) {
+					isFound = true;
+					break;
+				}
+
+				temp = temp.ref;
+
+			}
+
+		}
+
+		if (isFound)
+			System.out.println("Data found ");
+		else
+			System.out.println(data + " not found");
+
+	}
+
 	public void display() {
 		if (head == null)
 			System.out.println("No elements to display.");
