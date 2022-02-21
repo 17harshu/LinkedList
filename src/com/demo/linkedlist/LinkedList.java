@@ -40,6 +40,15 @@ public class LinkedList {
 		}
 	}
 
+	public void pop() {
+		if (head == null)
+			System.out.println("Nothing to delete..");
+		else {
+			head = head.ref;
+		}
+
+	}
+
 	public void display() {
 		if (head == null)
 			System.out.println("No elements to display.");
