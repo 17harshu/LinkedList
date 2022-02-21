@@ -46,7 +46,6 @@ public class LinkedList {
 		else {
 			head = head.ref;
 		}
-
 	}
 
 	public void popLast() {
