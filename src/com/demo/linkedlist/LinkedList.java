@@ -1,7 +1,10 @@
 package com.demo.linkedlist;
 
+import java.util.Scanner;
+
 public class LinkedList {
 	Node head;
+	Scanner scanner = new Scanner(System.in);
 
 	public class Node {
 		Object data;
@@ -92,6 +95,23 @@ public class LinkedList {
 			System.out.println("Data found ");
 		else
 			System.out.println(data + " not found");
+	}
+
+	public void insertNode(Object data) {
+		Node newNode = new Node(data);
+
+		if (head == null)
+			head = newNode;
+		else {
+			Node temp = head;
+			System.out.println("Enter the data after which new data should be added");
+			Object data1 = scanner.nextInt();
+			while (temp.data != data1) {
+				temp = temp.ref;
+			}
+			newNode.ref = temp.ref;
+			temp.ref = newNode;
+		}
 	}
 
 	public void display() {
